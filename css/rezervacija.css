@@ -1,0 +1,408 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  background-color: whitesmoke;
+  /*font-family: 'Abril Fatface', cursive;*/
+  /*font-family: 'Poppins', sans-serif;*/
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1 {
+  font-size: 4.8em;
+  font-weight: 400;
+  font-family: 'Abril Fatface';
+  text-align: center;
+}
+h2 {
+  font-size: 3em;
+  font-weight: 400;
+  font-family: 'Abril Fatface', cursive;
+  text-align: center;
+}
+h3 {
+  font-size: 1.8em;
+  font-weight: 400;
+  font-family: 'Abril Fatface', cursive;
+  text-align: center;
+}
+h4 {
+  font-size: 1.4em;
+  font-weight: 200;
+  font-family: 'Abril Fatface', cursive;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+a {
+  font-family: 'Abril Fatface', cursive;
+  letter-spacing: 0.03em;
+    text-decoration: none;
+}
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.8%;
+  padding-bottom: 0.8%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: whitesmoke;
+}
+header .logodiv{
+  width: 30%;
+  padding-left: 8%;
+}
+header nav {
+width: 70%;
+display: flex;
+justify-content: flex-end;
+padding-right: 8%;
+}
+.active {
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  transition: 0.4s;
+}
+.inactive {
+  transition: 0.5s;
+}
+
+/*navigacija sa hamburgerom*/
+.topnav {
+  overflow: hidden;
+}
+.topnav a {
+  display: inline-block;
+  color: #1D1D23;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 1em;
+}
+.topnav a:hover {
+  color: #DB9423;
+}
+#rezervisanje {
+  border: 1px solid white;
+  background-color: #DB9423;
+  color: white;
+  border-radius: 15px;
+  padding-left: 3%;
+  padding-right: 3%;
+transition: 0.5s;
+}
+#rezervisanje:hover {
+  background-color: black;
+  transition: 0.5s;
+}
+.topnav .icon {
+  display: none;
+  font-size: 1.5em;
+}
+
+main {
+  position: relative;
+  height: 85vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../img/pozadina.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  top: 80px;
+}
+.mainsection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8% 5% 14%;
+}
+.mainsection p {
+  text-align: center;
+  padding: 0 20%;
+    color: white;
+    margin: 30px 0;
+}
+.mainsection h1 {
+  margin-top: -5px;
+  margin-bottom: 2px;
+    color: white;
+}
+.mainsection h4 {
+  color: #DB9423;
+}
+.prvi {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10vw;
+}
+
+.drugi {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 10vw;
+}
+
+#prvideo {
+  margin: 8% 12%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.prvideosection {
+  padding: 0 12%;
+}
+.prvideosection img {
+  display: block;
+  margin: 0 auto;
+}
+.prvideosection h2 {
+  color: #DB9423;
+  margin-bottom: 3%;
+}
+.prvideosection h3 {
+  color: #DB9423;
+}
+/*.prvideosection h4 {
+  padding: 0 22%;
+}*/
+.prvideosection p {
+  margin-top: 38px;
+  margin-bottom: 38px;
+}
+
+
+#drugideo {
+  margin: 8%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: black;
+  padding: 8%;
+  border-radius: 10px;
+}
+
+input, textarea, button {
+  padding: 14px;
+  font-size: 1.1em;
+  font-family: 'Abril Fatface', cursive;
+  letter-spacing: 0.03em;
+  color: #DB9423;
+}
+input {
+    width: 49%;
+    margin: 6px 0;
+}
+textarea {
+  width: 99%;
+  margin: 6px 0;
+}
+button {
+  margin: 6px auto;
+  display: block;
+  width: 120px;
+  border: 1px solid rgba(0,0,0,0.88);
+  background-color: white;
+}
+button:hover {
+  background-color: #DB9423;
+  color: white;
+}
+
+#trecideo {
+  margin: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#trecideo h2, .boja {
+  color: #DB9423;
+}
+.trecideored {
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+}
+
+
+footer {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../img/pozadina.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+}
+.footersection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6% 8% 1%;
+}
+.footersection h2 {
+  color: white;
+  font-size: 4.8em;
+}
+.footersection p {
+  text-align: center;
+  padding: 0 15%;
+  color: white;
+  margin: 30px 0;
+}
+.footerdugme {
+  color: #DB9423;
+  background-color: inherit;
+  border: 1px solid #DB9423;
+  border-radius: 15px;
+  padding: 1% 2%;
+  transition: 0.5s;
+}
+.footerdugme:hover {
+  color: white;
+  background-color: #DB9423;
+  border: 1px solid inherit;
+  transition: 0.5s;
+}
+.mreze {
+  width: 225px;
+}
+.mreze a {
+  color: white;
+  border: 1px dashed white;
+  border-radius: 50%;
+  padding: 12px;
+  transition: 0.5s;
+  margin: 0 5px;
+}
+.mreze a:hover {
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+}
+.dno {
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 8% 2%;
+}
+.dno p {
+  color: white;
+    font-size: 0.9em;
+}
+.dno a {
+  color: #DB9423;
+}
+.dno a:hover {
+  color: white;
+}
+
+@media screen and (max-width: 1080px) {
+    input {
+      width: 48%;
+    }
+}
+
+
+@media screen and (max-width: 885px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+  }
+  header .logodiv {
+    padding-left: 0;
+  }
+  header nav {
+  width: 30%;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 0;
+  }
+  .topnav a {
+    display: none;
+  }
+  .topnav a.icon {
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+    width: 100%;
+    background-color: white;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    display: block;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 3.6em;
+  }
+  h2 {
+    font-size: 2.2em;
+  }
+  h3 {
+    font-size: 1.55em;
+  }
+  h4 {
+    font-size: 1.2em;
+  }
+
+main {
+  height: 75vh;
+}
+.mainsection {
+  padding: 21% 5% 14%;
+}
+  .mainsection p {
+    display: none;
+  }
+
+  #prvideo {
+    margin: 16% 8% 8%;
+  }
+  .prvideosection {
+    padding: 0 0;
+  }
+
+
+
+  .footersection h2 {
+    font-size: 3.5em;
+  }
+  .dno {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  input {
+    width: 99%;
+  }
+  .trecideored {
+    width: 300px;
+  }
+}
