@@ -205,7 +205,7 @@ main {
   margin: 8%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /*align-items: center;*/
 }
 #trecideo div {
   width: 45%;
@@ -214,6 +214,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: flex-start;
 }
 .trecideosection h2, .hl {
   color: #DB9423;
@@ -239,8 +240,22 @@ main {
   transition: 0.5s;
   text-decoration: none;
 }
-#trecideo img {
+/*#trecideo img {
   border-radius: 3%;
+}*/
+.trecideoslika {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url("../img/pozadina.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3%;
+}
+.trecideoslika p {
+ color: white;
 }
 
 #cetvrtideo {
@@ -260,6 +275,9 @@ position: relative;
 }
 .cetvrtideosection h2, .cetvrtideosection p {
   text-align: left;
+}
+.cetvrtideosection h2 {
+  margin-bottom: 5%;
 }
 .cetvrtideosection div {
   width: 45%;
@@ -353,6 +371,7 @@ footer {
 .footersection h2 {
   color: white;
   font-size: 4.8em;
+  padding: 25px 0;
 }
 .footersection p {
   text-align: center;
@@ -412,13 +431,18 @@ footer {
   }
   #trecideo div {
     width: 99%;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
   }
   .trecideosection {
     align-items: center;
   }
   .trecideosection p {
     text-align: center;
+  }
+  .trecideoslika {
+    flex-direction: column;
+    width: 99%;
+    height: 36vh;
   }
 }
 
@@ -524,5 +548,17 @@ main {
     align-items: center;
     margin-top: 5%;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #prvideo {
+    margin: 30% 8% 8%;
+  }
+  .petideodesno {
+    justify-content: center;
+  }
+  .kuvar {
+    width: 70%;
   }
 }

@@ -196,6 +196,7 @@ main {
 .drugideosection h3, .drugideosection p {
   text-align: left;
   margin-left: 20px;
+  color: white;
 }
 .drugideosection p {
   border-top: 1px solid red;
@@ -204,7 +205,7 @@ main {
   padding-top: 10px;
 }
 .slika1 {
-  background-image: url("../img/pozadina.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/pozadina.jpg");
   background-size: cover;
   height: 60vh;
   display: flex;
@@ -212,7 +213,7 @@ main {
   justify-content: flex-end;
 }
 .slika2 {
-  background-image: url("../img/pozadina.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/pozadina.jpg");
   background-size: cover;
   height: 60vh;
   display: flex;
@@ -220,7 +221,7 @@ main {
   justify-content: flex-end;
 }
 .slika3 {
-  background-image: url("../img/pozadina.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/pozadina.jpg");
   background-size: cover;
   height: 60vh;
   display: flex;
@@ -242,6 +243,9 @@ main {
   margin-top: 25px;
   margin-bottom: 25px;
 }
+.meniajtem h3, .meniajtem p {
+  text-align: left;
+}
 .cena {
   color: #DB9423;
 }
@@ -262,9 +266,6 @@ justify-content: space-between;
 .cetvrtideosection h2, .cetvrtideoajtem h4, .cetvrtideoajtem p {
   text-align: left;
 }
-.cetvrtideoajtem div {
-  border: 1px solid green;
-}
 
 footer {
   position: relative;
@@ -283,6 +284,7 @@ footer {
 .footersection h2 {
   color: white;
   font-size: 4.8em;
+  padding: 25px 0;
 }
 .footersection p {
   text-align: center;
@@ -340,6 +342,8 @@ footer {
   .meniajtem {
     flex-direction: column-reverse;
     align-items: center;
+  }
+  .meniajtem h3, .meniajtem p {
     text-align: center;
   }
 }
@@ -469,5 +473,11 @@ main {
   }
   .cetvrtideosection h2, .cetvrtideoajtem h4, .cetvrtideoajtem p {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #prvideo {
+    margin: 30% 8% 8%;
   }
 }

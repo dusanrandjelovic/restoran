@@ -202,6 +202,7 @@ footer {
 .footersection h2 {
   color: white;
   font-size: 4.8em;
+  padding: 25px 0;
 }
 .footersection p {
   text-align: center;
@@ -347,5 +348,11 @@ main {
   }
   .redslike a {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #prvideo {
+    margin-top: 30%;
   }
 }

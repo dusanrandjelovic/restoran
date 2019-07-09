@@ -241,7 +241,9 @@ button:hover {
   justify-content: space-around;
   width: 400px;
 }
-
+.trecideoredmob {
+  display: none;
+}
 
 footer {
   position: relative;
@@ -260,6 +262,7 @@ footer {
 .footersection h2 {
   color: white;
   font-size: 4.8em;
+  padding: 25px 0;
 }
 .footersection p {
   text-align: center;
@@ -399,10 +402,27 @@ main {
 }
 
 @media screen and (max-width: 685px) {
+  #prvideo {
+    margin: 24% 8% 8%;
+  }
   input {
     width: 99%;
   }
   .trecideored {
     width: 300px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #prvideo {
+    margin: 30% 8% 8%;
+  }
+  .trecideored {
+    display: none;
+  }
+  .trecideoredmob {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

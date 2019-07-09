@@ -191,7 +191,7 @@ main {
   padding: 0 12% 8%;
 }
 .vl {
-border-left: 1px solid rgba(0,0,0,0.6);
+border-left: 1px solid #DB9423;
 height: 110px;
 margin-left: 69%;
 }
@@ -207,6 +207,31 @@ margin-left: 69%;
 form {
   display: flex;
   flex-direction: column;
+}
+input, textarea {
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 1.1em;
+  font-family: 'Abril Fatface', cursive;
+  letter-spacing: 0.03em;
+  color: #DB9423;
+}
+.klik {
+  margin: 5px auto;
+  display: block;
+  width: 120px;
+  border: 1px solid #DB9423;
+  background-color: white;
+  padding: 10px;
+  font-size: 1.1em;
+  font-family: 'Abril Fatface', cursive;
+  letter-spacing: 0.03em;
+  color: #DB9423;
+}
+.klik:hover {
+  background-color: #DB9423;
+  color: white;
+  border: 1px solid white;
 }
 iframe {
   border:0;
@@ -228,7 +253,9 @@ iframe {
   justify-content: space-around;
   width: 400px;
 }
-
+.trecideoredmob {
+  display: none;
+}
 
 footer {
   position: relative;
@@ -247,6 +274,7 @@ footer {
 .footersection h2 {
   color: white;
   font-size: 4.8em;
+  padding: 25px 0;
 }
 .footersection p {
   text-align: center;
@@ -376,6 +404,9 @@ main {
     width: 99%;
     margin: 1.6% 0;
   }
+  iframe {
+    height: 44vh;
+  }
 
   .footersection h2 {
     font-size: 3.5em;
@@ -389,11 +420,31 @@ main {
 }
 
 @media screen and (max-width: 685px) {
+  #prvideo {
+    margin: 24% 8% 8%;
+  }
   .prvideored {
     flex-direction: column;
     align-items: center;
   }
+  input, textarea, button {
+    font-size: 1em;
+  }
   .trecideored {
     width: 300px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #prvideo {
+    margin: 30% 8% 8%;
+  }
+  .trecideored {
+    display: none;
+  }
+  .trecideoredmob {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

@@ -1,3 +1,7 @@
+<!--<?php
+include('forma.php');
+?>-->
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -88,23 +92,22 @@
 
      <section id="drugideo">
         <div>
-         <form class="" action="index.html" method="post">
-           <label for=""></label>
-           <input type="text" name="" value="">
+         <form class="forma" name="forma" action="index.html" method="post">
+           <!--action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>"-->
+           <label for="name"></label>
+           <input type="text" name="name" placeholder="Your Name">
 
-           <label for=""></label>
-           <input type="text" name="" value="">
+           <label for="email"></label>
+           <input type="text" name="email" placeholder="Email">
 
-           <label for=""></label>
-           <input type="text" name="" value="">
+           <label for="number"></label>
+           <input type="text" name="number" placeholder="Contact Number">
 
-           <label for=""></label>
-           <input type="text" name="" value="">
+           <label for="message"></label>
+           <textarea name="message" rows="8" cols="80" placeholder="Message"></textarea>
 
-           <label for=""></label>
-           <textarea name="name" rows="8" cols="80"></textarea>
-
-           <button type="button" name="button">Send</button>
+           <!--<button type="button" name="button">Send</button>-->
+           <input class="klik" type="button" name="button" value="Send" onclick="proveriKont()">
          </form>
         </div>
 
@@ -127,6 +130,18 @@
             <h4>10 AM --- 2 AM</h4>
          </div>
        </div>
+
+       <div class="trecideoredmob">
+         <div>
+            <h4 class="boja">MON - FRI</h4>
+            <h4>12 PM --- 11 PM</h4>
+         </div>
+         <div>
+            <h4 class="boja">SAT - SUN</h4>
+            <h4>10 AM --- 2 AM</h4>
+         </div>
+       </div>
+
          <h2>Happy Hours</h2>
          <h3>Enjoy 50% OFF</h3>
          <p>Every Thursday, 4PM – 7PM</p>
@@ -165,6 +180,7 @@
 
   <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
         <script src="js/script.js"></script>
+        <script src="js/forma.js"></script>
         <script>
       AOS.init();
     </script>
